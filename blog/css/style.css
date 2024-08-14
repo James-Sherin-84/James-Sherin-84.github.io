@@ -1,0 +1,249 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+@font-face{
+    font-family:Font1;
+    src:url(/blog/fonts/sans-serif/lato-regular.ttf);
+}
+
+html{
+    font-size:16px;
+    font-family: Font1, Helvetica, sans-serif;
+}
+
+/* -!- Typography -!- */
+
+
+article{
+    float:left;
+    width:69%;
+    padding-right:2%;
+    border-style:solid;
+    border-right:100%;
+    border-top: 0;
+    border-bottom:0;
+    border-left:0;
+    border-right-color:black;
+    border-right-width:0.1rem;
+}
+
+aside{
+    float:left;
+    width:24%;
+    padding-left:2%;
+}
+
+li{
+    width:15%;
+    display:inline;
+    
+    font-size:1.5rem;
+    list-style:none;
+
+    padding-right:7%;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    color:darkslateblue;
+    text-decoration:none;
+}
+
+li a{
+    text-decoration:inherit;
+    color:inherit;
+    text-decoration-thickness: inherit;
+}
+
+ul li:nth-child(2){
+    color:red;
+    text-decoration: line-through;
+    text-decoration-thickness: 0.2rem;
+}
+
+nav{
+    border:solid;
+
+    border-top: 100%;
+    border-bottom: 100%;
+    border-left:0;
+    border-right:0;
+
+    border-top-color:black;
+    border-bottom-color:black;
+    border-top-width:0.1rem;
+    border-bottom-width:0.1rem;
+}
+
+.article-image img{
+    float:left;
+    width:40%;
+    padding:1rem;
+    padding-top:0;
+}
+
+.article-image{
+    background-color:none;
+    width:auto;
+    float:none;
+    padding:0;
+    margin:0;
+}
+
+h2{
+    margin-left:2.9%;
+}
+
+article + div{
+    width:2.5%;
+    height:100%;
+    font-size:0.01rem;
+    border:solid;
+    border-width:0;
+    border-right-color:black;
+    border-right-width: 0.1rem;
+    margin-left:70%
+
+}
+
+figure img{
+    margin:0;
+    width:100%;
+}
+
+aside img{
+    width:80%;
+}
+aside p{
+    width:80%;
+    padding-bottom:2rem;
+    font-size:0.5rem;
+    border:solid;
+    border-width:0;
+    border-bottom-width: 0.2rem;;
+    border-bottom:90%;
+    border-bottom-color:black;
+}
+
+aside p a{
+    text-decoration:none;
+    font-size: 0.25rem;
+}
+
+h1{
+    text-align:center;
+    transform:rotate(-5deg);
+    margin-top:4rem;
+    margin-bottom:4rem;
+    font-size:3rem;
+}
+
+.highlight{
+    background-color:darkred;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-left:0.7rem;
+    padding-right:0.7rem;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    color:bisque;
+    box-shadow: .1rem .5rem .1rem #000;
+}
+
+time{
+    font-style: italic;
+    font-size:0.7rem;
+}
+
+figure{
+    background-color:beige;
+    width:32%;
+    float:left;
+    padding:0;
+    margin:0.2rem;
+    margin-bottom:3rem;
+    margin-top:3rem;
+}
+
+figcaption{
+    padding-bottom:1rem;
+    margin-top:0.5rem;
+    margin-left:1rem;
+    font-size:0.75rem;
+}
+
+.subscribe {
+    font-size:1.5rem;
+    background-color:darkblue;
+    color:rgb(189, 176, 176);
+    padding:1rem;
+    border-radius: 20%;
+    box-shadow: .3rem .2rem 0.2rem #000;
+}
+
+footer{
+    margin-top:5rem;
+}
+
+footer p{
+    margin-top:5rem;
+    display:inline;
+    float:left;
+}
+footer p:nth-child(2){
+    float:right;
+    width:40%;
+    text-align-last:right;
+    margin-right:2rem;
+}
+
+footer a{
+    text-decoration: none;
+    color:rgb(99, 99, 99);
+}
+
